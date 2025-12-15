@@ -5,6 +5,9 @@
 }
 body{
     background-color: rgb(247, 244, 237);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .nav{
     display: flex;
@@ -51,6 +54,23 @@ button{
     padding-bottom: 5px;
     border-radius: 25px;
 }
+.footer{
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 0;
+    border-top: 1px solid black;
+    
+}
+main{
+    flex: 1;
+}
+
+footer ul li{
+    font-weight: 400;
+    font-size: 12px;
+}
 
 @media (max-width:730px) {
     .n{
@@ -63,3 +83,14 @@ button{
     }
 }
 
+@media (max-width:830px) {
+    .a{
+        display: none;
+
+    }
+    .footer{
+        background-color: black;
+        color: white;
+    }
+    
+}
